@@ -1,0 +1,105 @@
+*{
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background: #FF2A6B;
+}
+
+.Quote-container{
+    background-color: #fff;
+    width: 700px;
+    padding: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 10px 20px 0px;
+}
+
+
+.Quote-header{
+    position: relative;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.Quote-header::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    border-radius: 1px;
+    background: rgb(23, 124, 229,0.5);
+    position: absolute;
+    bottom: -30%;
+    left: 35%;
+    transform: translateX(50%);
+}
+
+.Quote-container h4{
+    font-family: "Playfair Display", serif;
+    font-size: 26px;
+    min-height: 100px;
+}
+.Quote-container h4::before{
+    content: '"'; 
+}
+.Quote-container h4::after{
+    content: '"';
+}
+
+.Quote-container h6{
+    font-size: 12px;
+    margin: 10px 20px;
+    float: right;
+    position: relative;
+}
+
+.Quote-container h6::before{
+    content: '';
+    position: absolute;
+    left: -25;
+    top: 50%;
+    width: 20px;
+    height: 2px;
+    background: rgb(23, 124, 229 , 0.5);
+    
+}
+
+.Quote-container div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.Quote-container button{
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    margin-left: 5px;
+    cursor: pointer;
+    border: 1px solid ;
+}
+
+.colored{
+    background-color: #FF2A6B;
+}
+
+.non-colored{
+    background: transparent;
+}
+
+
+img{
+    width: 30px;
+}
